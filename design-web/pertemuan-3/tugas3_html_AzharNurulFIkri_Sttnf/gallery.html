@@ -1,0 +1,78 @@
+<html>
+<head>
+    <style>
+    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background-color: #f0f2f5;
+        padding: 30px;
+        text-align: center;
+    }
+
+    h2 {
+        color: #2c3e50;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px; /* Jarak antar frame foto */
+    }
+
+    /* Ini adalah bagian Frame Foto-nya */
+    .photo-frame {
+        background-color: #ffffff;
+        padding: 15px; /* Jarak antara gambar dan bingkai putih */
+        border: 1px solid #ddd;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15); /* Efek bayangan biar timbul */
+        transition: transform 0.3s ease;
+        width: 300px; /* Ukuran frame yang lebih besar */
+    }
+
+    .photo-frame:hover {
+        transform: rotate(-2deg) scale(1.05); /* Efek sedikit miring saat disorot */
+    }
+
+    .photo-frame img {
+        width: 100%; /* Gambar mengikuti lebar frame */
+        height: 200px; /* Tinggi gambar dibuat cukup besar */
+        object-fit: cover;
+        display: block;
+    }
+
+    
+</style>
+</head>
+<body>
+
+    <h2>Gallery Foto</h2>
+    <p>Klik gambar untuk melihat ukuran penuh.</p>
+
+    <div class="gallery-grid">
+        
+        <div class="gallery-item">
+            <a href="WhatsApp Image 2026-02-26 at 12.51.13.jpeg" target="_blank">
+                <img src="WhatsApp Image 2026-02-26 at 12.51.13.jpeg">
+            </a>
+           
+        </div>
+
+        <div class="gallery-item">
+            <a href="WhatsApp Image 2026-02-26 at 12.52.01.jpeg" target="_blank">
+                <img src="WhatsApp Image 2026-02-26 at 12.52.01.jpeg">
+            </a>
+            
+        </div>
+
+     
+            
+        </div>
+
+      
+    </div>
+
+</body>
+</html>
